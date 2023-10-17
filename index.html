@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+<header>
+    <div class="mainbar">
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="map.html">BROWSE ACTIVITIES</a></li>
+            <li><a href="Register.html">MY ACTIVITIES</a></li>
+            <li><a href="login.html">PROFILE SETTINGS</a></li>
+        </ul>
+    </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <div class="sidebar">
+        <img src="logo.png" class="logo">
+      <div class="nav-icons">
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-power-off"></i>
+        <img src="women 2.jpg" class="profile">
+      </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="name">
+        <h2>Hello <span>Aman Mittal!</span> <img src="verified.jpg"></h2>
+        <p>Congratulations! You are our verified member</p>
+    </div>
+
+    <div class="activities">
+        <div class="one">
+          <i class="fa fa-database data"></i>
+          <h3>Total Activities Enrolled</h3>
+          <p>32</p>
+        </div>
+        <div class="two">
+            <i class="fa fa-clock"></i>
+          <h3>Upcoming Activities</h3>
+          <p>02</p>
+        </div>
+        <div class="three">
+            <i class="fa fa-calendar"></i>
+          <h3>TTC Member Since</h3>
+          <p>02/12/23</p>
+        </div>
+        <div class="four">
+            <i class="fa fa-trophy"></i>
+          <h3>Reward Points</h3>
+          <p>150</p>
+        </div>
+    </div>
+
+    <div class="events">
+        <h3>Upcoming Events</h3>
+        <div class="calender">
+            <iframe src="https://calendar.google.com/calendar/embed?height=700&wkst=1&bgcolor=%23ffffff&ctz=UTC&src=dGhpbmdzdG9jb25xdWVyQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="1100" height="600" frameborder="0" scrolling="no" class="main-calender"></iframe>
+            <div class="content">
+                <p>NEVER STOP AMAN!</p>
+                <img src="women-running.jpg" class="do-it">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.nav');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+
+
+</body>
+</html>

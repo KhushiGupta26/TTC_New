@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.sidebar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: #FAFAFA;
+  width: 96.14px;
+  gap: 610px;
+  margin-top: -5%;
+}
+.nav-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  color: rgb(128, 127, 127);
+  background: transparent;
+  gap: 18px;
+  margin-top: -65%;
+  cursor: pointer;
+}
+.logo{
+  margin-left: 28%;
+  margin-top: 40%;
+  width: 42.753px;
+  height: 26.076px;
+}
+.mainbar{
+ box-shadow: 0 3px 3px rgba(0, 0, 0, 0.10);
+ padding: 20px;
+ margin-left: 6%;
+ overflow-x: hidden;
+}
+.nav{
+  display: flex;
+  align-items: center;
+}
+.nav a{
+  color: #999;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 4px;
+  margin:  20px;
+  padding: 0px;
+  transition: all .3s ease;
+}
+.nav a:hover{
+  color: rgb(83, 85, 86);
+}
+#menu-icon{
+  font-size: 35px;
+  color: black;
+  background-color: rgb(249, 247, 247);
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+@media (max-width: 905px){
+  #menu-icon{
+      display: block;
+      margin-left: 85%;
+      background: transparent;
+  }
+  .sidebar{
+      display: none;
+  }
+  .mainbar{
+      margin-left: 0;
+      background: transparent;
+      box-shadow: 5px 5px white;
+  }
+  .nav{
+      position: fixed;
+      top: 14%;
+      right: -100%;
+      width: 50%;
+      height: 40vh;
+      display: flex;
+      background-color: rgb(185, 186, 186);
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+  }
+  .nav a{
+      display: block;
+      color: #FAFAFA;
+      font-size: 14px;
+      margin: 20px 0;
+      padding: 0px 25px;
+      letter-spacing: 2px;
+      transition: all .50s ease;
+  }
+ .nav a:hover{
+      color: rgb(66, 86, 97);
+      transform: translateY(5px);
+  }
+  .nav.open{
+      right: 2%;
+   } 
+   .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+@media (max-width: 1200px){
+  .sidebar{
+      margin-top: -10%;
+  }
+  .logo{
+      margin-top: 90%;
+  }
+}
+
+/* RIGHT-SIDE MAP*/
+.right-map {
+  margin-top: -98%;
+  height: 100%;
+  margin-left: 55%;
+  position: fixed;
+}
+
+/* SEARCH-BAR */
+  .description {
+    text-align: center;
+    transform: translateY(-2em);
+    margin-top: 4%;
+    margin-left: 10%;
+    background: #FAFAFA;
+    border-radius: 100px;
+    width: 40%;
+    height: 67.614px;
+  }
+  .search {
+    border: none;
+    background-color: transparent;
+    margin-top: 3.5%;
+    font-size: 1em;
+    color: rgb(21, 21, 21);
+    width: 80%;
+}
+  .search:focus {
+    outline: none;
+  }
+  .search-icon{
+    color: #999;
+  }
+
+  /* CARDS */
+  .card-container{
+   height: 20%;
+  } 
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width:571.54px;
+    max-height: 209.85px;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-left: 10%;
+    font-size: 13px;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+    margin-right: 20px;
+  }
+  .card .content {
+    flex-grow: 1;
+    font-family: jost;
+    font-weight: 400;
+  }
+  .card:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  .profile{
+    display: flex;
+  }
+  .profile img{
+    width: 26px;
+    height: 26px;
+    margin-top: 2%;
+   border-radius: 50%;
+  }
+  .profile p{
+    color: rgba(102, 102, 102, 1);
+    font-size: 12px;
+    margin-top: 4%;
+    margin-left: -4%;
+    text-align:center;
+  }
+  .star {
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    size: .5px;
+    margin-top: 2%;
+    background-image: url('star.png'); 
+    background-size: cover;
+    cursor: pointer; 
+  }
+  .location{
+    display: flex;
+    margin-top: 2%;
+  }
+  .para{
+    margin-top: 2%;
+  }
+  .number{
+    display: flex;
+    margin-top: 2%;
+  }
+  .call{
+    margin-top: 2%;
+  }
+  .second{
+    margin-top: 3%;
+  }
+
+@media screen and (max-width: 1350px) {
+   .right-map{
+    display: none;
+   }  
+   .description{
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 8%;
+   }
+   .card{
+    width: 100%;
+    margin-left: 28%;
+   }
+}
+
+@media screen and (max-width: 700px){
+   .description{
+    width: 50%;
+   }
+   .card{
+    margin-left: 5%;
+   }
+}
+    

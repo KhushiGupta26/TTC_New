@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Activities</title>
+    <link rel="stylesheet" href="Register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+<header>
+    <div class="mainbar">
+        <ul class="nav">
+            <li><a href="Dashboard.html">HOME</a></li>
+            <li><a href="map.html">BROWSE ACTIVITIES</a></li>
+            <li><a href="Register.html">MY ACTIVITIES</a></li>
+            <li><a href="login.html">PROFILE SETTINGS</a></li>
+        </ul>
+    </div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <div class="sidebar">
+        <img src="logo.png" class="logo">
+      <div class="nav-icons">
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-power-off"></i>
+        <img src="women 2.jpg" class="profile">
+      </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="guitar-img">
+        <img src="guitar 2.jpg">
+        <h2>Guitar Lessons - Professional Level</h2>
+        <p>Some description about the swimming event that the owner or the producer will type describing about the event and some of its details. For now this is a dummy paragraph.
+        </p>
+        <img src="5 stars.jpg" class="stars">
+        <div class="location">
+            <i class="fa fa-map-marker"></i>
+            <p>Ground 14, Near South City, Ludhiana, 141001</p>
+        </div>
+        <div class="contact">
+            <i class="fa fa-phone"></i>
+            <p>+91 9834567657</p>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.1636306278497!2d75.86020107544583!3d30.854093474525975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a839685c40fcf%3A0xddbb6d9228dcc829!2sTTC(THINGS%20TO%20CONQUER)%20Guitar%20Classes!5e0!3m2!1sen!2sin!4v1696609687736!5m2!1sen!2sin"
+            width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="location2">
+            <i class="fa fa-map-marker"></i>
+            <p>Ground 14, Near South City, Ludhiana, 141001</p>
+        </div>
+        <div class="btn"><a href="QR Code.html">REGISTER NOW</a></div>
+    </div>
+
+    <div class="profile2">
+        <img src="women.jpg">
+        <p class="host">Meet your host</p>
+        <h2>Ms. Emma Ronney <img src="verified.jpg" class="verified"></h2>
+        <div class="contact2">
+            <i class="fa fa-phone call"></i>
+            <p>+91 9834567657</p>
+        </div>
+        <p class="heading">Achievements and awards</p>
+        <div class="awards">
+            <div class="first">
+                <i class="fa fa-trophy"></i>
+                <p>Won something something in 2021</p>
+            </div>
+            <div class="second">
+                <i class="fa fa-trophy"></i>
+                <p>Won something something in 2021</p>
+            </div>
+            <div class="third">
+                <i class="fa fa-trophy"></i>
+                <p>Won something something in 2021</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.nav');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

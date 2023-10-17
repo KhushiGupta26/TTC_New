@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    margin-top: 2%;
+    width: 536.558px;
+    padding: 2%;
+    border-radius: 20px;
+    background: #f3efef;
+}
+.icons{
+    display: flex;
+    gap: 90%;
+    font-size: 130%;
+}
+.cross{
+    cursor: pointer;
+}
+.tick{
+    padding: 1%;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(42, 207, 42);
+}
+h1{
+    color: #333;
+    margin-top: 3%;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.para{
+    color: #666;
+    margin-top: 1%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.card{
+    width: 270.36px;
+    margin-left: 20%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 90.193px;
+    height: 49.409px;
+    margin-top: 2%
+}
+h2{
+    color: #000;
+    margin-top: 5%;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.conquer{
+    color: #E3A10F;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+}
+.id{
+    color: #333;
+    font-size: 16px;
+    margin-top: 2%;
+    font-weight: 400;
+    line-height: 24px;
+}
+.qr{
+    margin-top: 4%;
+    cursor: pointer;
+}
+.validity{
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.btn{
+    border-radius: 10px;
+    background: #333;
+    padding: 3%;
+    margin-left: 30%;
+    margin-top: 5%;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 6px 5px 0 rgba(75, 66, 43, 0.24);
+}
